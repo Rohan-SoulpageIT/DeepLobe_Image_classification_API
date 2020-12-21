@@ -21,7 +21,7 @@ def pre_processing(img_bytes):
 
 def classifiy_image(img_data):
     # loading the resnet50 model
-    resnet = models.resnet50(pretrained=True)
+    resnet = models.resnet18(pretrained=True)
     # getting model for prediction.
     resnet.eval()
     # inference we are getting in form of the tensors
